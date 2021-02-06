@@ -1,0 +1,118 @@
+h1 {
+    text-align: center;
+    font-size: 15vh;
+    margin: 2.5vh;
+  }
+  
+  body {
+    max-width: 85%;
+    margin: auto;
+    background-color: #f5f0e4;
+  }
+  
+  .container {
+    /* border: 2px solid #DFA612; */
+    height: 100%;  
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+  }
+  
+  .container2 {
+    border: dashed darkgrey;
+    background-color: white;
+    border-radius: 2vh;
+    width: 90%;  
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    margin-top: 7.5vh;
+  }
+     
+  img{
+    /* max-width: 22.5vh;   */
+    max-height: 25vh;
+  }
+  
+  img:hover {
+    border: 2px dotted red;
+    position: static;
+    /* transform: scale(2.5); */
+    display:block;
+    z-index: 999;
+  
+  }
+  
+  .box { 
+    display: flex;
+    background-color:#dee0e0;
+    flex-flow: column;
+    width: 100%;
+    height: 100%;
+    border: double darkgrey ;
+    margin: 1vh;
+  }
+  
+  
+  .yes{
+    text-align: center;
+    background-color: green;
+    margin: 1vh;
+    border: ridge;
+  }
+  
+  .no{
+    text-align: center;
+    background-color: red;
+    margin: 1vh;
+    border: ridge;
+  }
+  
+  .origin {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    flex-basis: 100%;
+    flex-grow: 1;
+    padding: 10px;
+  }
+    
+  .draggable {
+    font-weight: normal;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+  }
+    
+  .dropzone {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: white;
+    flex-basis: 100%;
+    flex-grow: 1;
+    padding: 10px;
+    border: inset .5vh;
+    margin: 1vh;
+  }  
+  
+  .container3 {
+    border: double darkgrey ;
+    background-color:#dee0e0;
+    width: 90%;  
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 7.5vh;
+    margin-bottom: 25vh;
+  }
+  
+  .box2 {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    background-color: white;
+    border: inset .5vh;
+    margin: 1vh;
+  }
