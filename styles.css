@@ -2,23 +2,23 @@ h1 {
     text-align: center;
     font-size: 15vh;
     margin: 2.5vh;
-  }
+}
   
-  body {
+body {
     max-width: 85%;
     margin: auto;
     background-color: #f5f0e4;
-  }
+}
   
-  .container {
+.container {
     /* border: 2px solid #DFA612; */
     height: 100%;  
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
-  }
+}
   
-  .container2 {
+.container2 {
     border: dashed darkgrey;
     background-color: white;
     border-radius: 2vh;
@@ -27,23 +27,23 @@ h1 {
     flex-flow: row wrap;
     margin: auto;
     margin-top: 7.5vh;
-  }
+}
      
-  img{
+img{
     /* max-width: 22.5vh;   */
     max-height: 25vh;
-  }
+}
   
-  img:hover {
+img:hover {
     border: 2px dotted red;
     position: static;
     /* transform: scale(2.5); */
     display:block;
     z-index: 999;
   
-  }
+}
   
-  .box { 
+.box { 
     display: flex;
     background-color:#dee0e0;
     flex-flow: column;
@@ -51,40 +51,40 @@ h1 {
     height: 100%;
     border: double darkgrey ;
     margin: 1vh;
-  }
+}
   
   
-  .yes{
+.yes{
     text-align: center;
     background-color: green;
     margin: 1vh;
     border: ridge;
-  }
+}
   
-  .no{
+.no{
     text-align: center;
     background-color: red;
     margin: 1vh;
     border: ridge;
-  }
+}
   
-  .origin {
+.origin {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     flex-basis: 100%;
     flex-grow: 1;
     padding: 10px;
-  }
+}
     
-  .draggable {
+.draggable {
     font-weight: normal;
     margin-bottom: 10px;
     margin-top: 10px;
     padding: 10px;
-  }
+}
     
-  .dropzone {
+.dropzone {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -94,25 +94,37 @@ h1 {
     padding: 10px;
     border: inset .5vh;
     margin: 1vh;
-  }  
+}  
   
-  .container3 {
+.container3 {
     border: double darkgrey ;
     background-color:#dee0e0;
-    width: 90%;  
+    width: 75%;  
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
     margin: auto;
     margin-top: 7.5vh;
     margin-bottom: 25vh;
-  }
+}
   
-  .box2 {
+.box2 {
     display: flex;
     flex-flow: column;
-    justify-content: center;
+    align-items: center;
     background-color: white;
     border: inset .5vh;
     margin: 1vh;
-  }
+    width: 20vw;
+}
+
+.box2 div {
+    margin: 2.5vh;
+}
+
+.outputbox {
+    background-color: white;
+    border: inset .5vh;
+    width: 10vw;
+    margin: 1vh;
+}

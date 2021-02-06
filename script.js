@@ -18,9 +18,9 @@ function onDrop(event) {
     event
         .dataTransfer
         .clearData();
-  }
+}
 
-  window.getCount = function(parent, getChildrensChildren){
+window.getCount = function(parent, getChildrensChildren){
     var relevantChildren = 0;
     var children = parent.childNodes.length;
     for(var i=0; i < children; i++){
@@ -30,6 +30,18 @@ function onDrop(event) {
             relevantChildren++;
         }
     }
-    return relevantChildren;
+    if (relevantChildren <= 4){
+        return("you dont like art")
+    }
+    else (relevantChildren > 4);{ 
+        return("you like art")
+    }
+}
+
+submissionbtn = document.getElementById("submission")
+
+submissionbtn.onclick = function() {
+    document.getElementById("txtOutput").innerHTML = getCount(document.getElementById('test'), false);
+    
 }
 
