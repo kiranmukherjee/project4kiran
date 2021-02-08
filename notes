@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,">
+    <title>Project 3: Interactive Site - Kiran Mukherjee</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@100;400&display=swap" >
+    <style> 
+        body h1,h2,h3,h4,h5,h6 {font-family: 'Fraunces', serif;} 
+    </style>  
+          
+    <head>
+        <div>
+            <h1> IS IT ART? </h1>
+        </div>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
+                <div class="yes">
+                    <h2>Yes</h2>                    
+                </div>
+                <div
+                id="test" class="dropzone"
+                ondragover="onDragOver(event);"
+                ondrop="onDrop(event);"
+                >
+                </div>
+            </div>
+            <div class="box"> 
+                <div class="no">
+                    <h2>No</h2>                    
+                </div>
+                <div
+                class="dropzone"
+                ondragover="onDragOver(event);"
+                ondrop="onDrop(event);"
+                >
+                </div>
+            </div>
+        </div>
+        <!-- <a href="#" onclick="alert(getCount(document.getElementById('test'), true));">Count Inner Children</a>  -->
+        <div class="container2">
+            <div class="origin">
+                <img 
+                    src="https://news.artnet.com/app/news-upload/2016/04/Duchamp-Fountain-copy.jpg"
+                    id="draggable-1"
+                    class="draggable"
+                    draggable="true"
+                    ondragstart="onDragStart(event);">  
+                <img 
+                    src="https://images.theconversation.com/files/362241/original/file-20201007-14-e77rqf.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop"
+                    id="draggable-2"
+                    class="draggable"
+                    draggable="true"
+                    ondragstart="onDragStart(event);">
+                <img 
+                    src="https://www.moma.org/media/W1siZiIsIjQ3ODMxNSJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=e01b4c2140afb867"
+                    id="draggable-3"
+                    class="draggable"
+                    draggable="true"
+                    ondragstart="onDragStart(event);">  
+                <img 
+                    src=" https://imgc.artprintimages.com/img/print/campbell-s-soup-i-1968_u-l-e7uue0.jpg?h=550&p=0&w=550&background=fbfbfb"
+                    id="draggable-4"
+                    class="draggable"
+                    draggable="true"
+                    ondragstart="onDragStart(event);"> 
+                <img 
+                    src="https://i.pinimg.com/originals/1e/d5/b1/1ed5b1ae1859beb055da1ae98a0b9b96.jpg"
+                    id="draggable-5"
+                    class="draggable"
+                    draggable="true"
+                    ondragstart="onDragStart(event);"> 
+                <img 
+                    src="https://www.worldatlas.com/r/w2000-h1125-q90/upload/1f/e7/fd/1280px-van-gogh-starry-night-google-art-project.jpg"
+                    id="draggable-6"
+                    class="draggable"
+                    draggable="true"
+                    ondragstart="onDragStart(event);"> 
+                <img 
+                    src="https://www.streetartbio.com/wp-content/uploads/2020/03/Banksy_Balloon_Girl_London.jpg"
+                    id="draggable-7"
+                    class="draggable"
+                    draggable="true"
+                    ondragstart="onDragStart(event);"> 
+                <img 
+                    src="https://magazine.northeast.aaa.com/wp-content/uploads/2019/04/StillHere_Gaia_2018-640x423.jpg"
+                    id="draggable-8"
+                    class="draggable"
+                    draggable="true"
+                    ondragstart="onDragStart(event);"> 
+                <img 
+                    src="https://www.bocadolobo.com/blog/wp-content/uploads/2020/10/Some-of-The-Most-Famous-Artists-Of-All-Time-11.jpg"
+                    id="draggable-9"
+                    class="draggable"
+                    draggable="true"
+                    ondragstart="onDragStart(event);"> 
+                <img 
+                    src="https://static.skyminds.net/2018/06/jean-francois-millet-les-glaneuses-compressor.jpg"
+                    id="draggable-10"
+                    class="draggable"
+                    draggable="true"
+                    ondragstart="onDragStart(event);"> 
+                <img 
+                    src="https://d32dm0rphc51dk.cloudfront.net/NwSWV2ah9kkXAuSxCkYvsw/large.jpg"
+                    id="draggable-11"
+                    class="draggable"
+                    draggable="true"
+                    ondragstart="onDragStart(event);"> 
+                <img 
+                    src="https://cdn.britannica.com/93/171293-050-D99BEDB2/Graffiti-Berlin-Wall.jpg"
+                    id="draggable-12"
+                    class="draggable"
+                    draggable="true"
+                    ondragstart="onDragStart(event);"> 
+                <img 
+                    src="https://sfmoma-media-dev.s3.us-west-1.amazonaws.com/www-media/2018/08/25063014/98.308.A-C_01_H02-Large-TIFF_4000-pixels-long.jpg"
+                    id="draggable-11"
+                    class="draggable"
+                    draggable="true"
+                    ondragstart="onDragStart(event);"> 
+                <img 
+                    src="https://upload.wikimedia.org/wikipedia/en/3/3c/VillaSavoye.jpg"
+                    id="draggable-12"
+                    class="draggable"
+                    draggable="true"
+                    ondragstart="onDragStart(event);"> 
+                <img 
+                    src="https://franklloydwright.org/wp-content/uploads/2017/02/fallingwater.jpg"
+                    id="draggable-13"
+                    class="draggable"
+                    draggable="true"
+                    ondragstart="onDragStart(event);"> 
+                <img 
+                    src="https://apollo.imgix.net/content/uploads/2020/08/GettyImages-97594026.jpg?auto=compress,format&w=900&h=600"
+                    id="draggable-14"
+                    class="draggable"
+                    draggable="true"
+                    ondragstart="onDragStart(event);"> 
+                <img 
+                    src="https://thumbs-prod.si-cdn.com/QeQTD3WhBcKuvndZZlMwcuyuJ5A=/fit-in/1600x0/https://public-media.si-cdn.com/filer/f1/f0/f1f08b76-e4dc-4445-a1ba-519a4ab00181/lakhania_dari_cave_arts_-_panoramio.jpg"
+                    id="draggable-15"
+                    class="draggable"
+                    draggable="true"
+                    ondragstart="onDragStart(event);"> 
+                <img 
+                    src="https://sothebys-com.brightspotcdn.com/dims4/default/11198b5/2147483647/strip/true/crop/640x360+0+0/resize/1200x675!/quality/90/?url=http%3A%2F%2Fsothebys-brightspot-migration.s3.amazonaws.com%2Fea%2F35%2F58%2Fb43cc2f76a059370a937cf82cec8b43ca7c32c49c0fcd70a7e274648da%2Fpointilism-recircxos-3432943.jpg"
+                    id="draggable-16"
+                    class="draggable"
+                    draggable="true"
+                    ondragstart="onDragStart(event);"> 
+
+
+
+                    
+            </div>
+        </div>
+        <div class="container3">
+            <div class="box2"> 
+                <div><h2>How much do you like art?</h2></div>
+                <div><button id="submission" > Submit </button></div>
+            </div>
+            <div class="outputbox">
+                <output type=text id = "txtOutput" ></output>
+            </div>
+
+        </div>
+        <script src="script.js"></script>
+
+    </body> 
+</html>
+
+
+
+
+
+
+
+function onDragStart(event) {
+    event
+      .dataTransfer
+      .setData('text/plain', event.target.id);
+}
+
+function onDragOver(event) {
+    event.preventDefault();
+}
+
+function onDrop(event) {
+    const id = event
+      .dataTransfer
+      .getData('text');
+    const draggableElement = document.getElementById(id);
+    const dropzone = event.target;
+    dropzone.appendChild(draggableElement);
+    event
+        .dataTransfer
+        .clearData();
+}
+
+window.getCount = function(parent, getChildrensChildren){
+    var relevantChildren = 0;
+    var children = parent.childNodes.length;
+    for(var i=0; i < children; i++){
+        if(parent.childNodes[i].nodeType != 3){
+            if(getChildrensChildren)
+                relevantChildren += getCount(parent.childNodes[i],true);
+            relevantChildren++;
+        }
+    }
+    if (relevantChildren <= 4){
+        return("you dont like art")
+    }
+    else (relevantChildren > 4);{ 
+        return("you like art")
+    }
+}
+
+submissionbtn = document.getElementById("submission")
+
+submissionbtn.onclick = function() {
+    document.getElementById("txtOutput").innerHTML = getCount(document.getElementById('test'), false);
+    
+}
+
