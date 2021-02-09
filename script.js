@@ -20,24 +20,59 @@ function onDrop(event) {
         .clearData();
 }
 
-class Art {
-   
-    constructor(artValue){   
-       this.artValue= artValue;
-        }
-    checkValue(){
-        if(this.artValue > 2)
-        {console.log("You like art")}
-        if (this.artValue < 2)
-        {console.log("You don't like art")}
-        }
+
+
+
+var containerDiv = document.getElementById("test");
+
+var pics = containerDiv.getElementsByClassName("draggable");
+    // var divs = document.getElementsByClassName("draggable");
+
+var artValues = []; {
+    for (var i = 0; i < pics.length; i++) {
+    artValues.push(pics[i].getAttribute("data-art-type"));
+    }   
+}        
+
+
+submissionbtn = document.getElementById("submission")
+
+submissionbtn.onclick = function() {
+    console.log(pics);
 }
 
-let piece1 = new Art(1);
+// class Art {
+   
+//     constructor(artValue){   
+//        this.artValue= artValue;
+//         }
+//     checkValue(){
+//         if(this.artValue > 2)
+//         {console.log("You like art")}
+//         if (this.artValue < 2)
+//         {console.log("You don't like art")}
+//         }
+// }
 
-piece1.checkValue();
-    
+// let piece1 = new Art(1);
+
+// piece1.checkValue();
+
+
+
+
+
+// var artValues = [];
+//     var divs = document.getElementsByClassName("draggable");
+//     for (var i = 0; i < divs.length; i++) {
+//     artValues.push(divs[i].getAttribute("data-art-type"));
+//     }   
+//     print.artValues;
         
+// }
+    
+
+// console.log(artValues)
 
 
 // window.getCount = function(parent, getChildrensChildren){
@@ -57,6 +92,8 @@ piece1.checkValue();
 //         return("you like art")
 //     }
 // }
+                                                                         
+// artwork[1]
 
 // submissionbtn = document.getElementById("submission")
 
