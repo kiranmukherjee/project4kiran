@@ -20,59 +20,21 @@ function onDrop(event) {
         .clearData();
 }
 
+let dataArt = []
 
-
-
-var containerDiv = document.getElementById("test");
-
-var pics = containerDiv.getElementsByClassName("draggable");
-    // var divs = document.getElementsByClassName("draggable");
-
-var artValues = []; {
-    for (var i = 0; i < pics.length; i++) {
-    artValues.push(pics[i].getAttribute("data-art-type"));
-    }   
-}        
-
-
-submissionbtn = document.getElementById("submission")
+let submissionbtn = document.getElementById("submission")
 
 submissionbtn.onclick = function() {
-    console.log(pics);
-}
-
-// class Art {
-   
-//     constructor(artValue){   
-//        this.artValue= artValue;
-//         }
-//     checkValue(){
-//         if(this.artValue > 2)
-//         {console.log("You like art")}
-//         if (this.artValue < 2)
-//         {console.log("You don't like art")}
-//         }
-// }
-
-// let piece1 = new Art(1);
-
-// piece1.checkValue();
+let dataItems = $("#test .draggable");
+let itemCount = dataItems.length    
+for (i=0; i<itemCount; i++) {
+    let info = $(dataItems[i]).attr("data-art");
+    dataArt.push(info)
+    }
+    document.getElementById("txtOutput").innerHTML = dataArt
+}   
 
 
-
-
-
-// var artValues = [];
-//     var divs = document.getElementsByClassName("draggable");
-//     for (var i = 0; i < divs.length; i++) {
-//     artValues.push(divs[i].getAttribute("data-art-type"));
-//     }   
-//     print.artValues;
-        
-// }
-    
-
-// console.log(artValues)
 
 
 // window.getCount = function(parent, getChildrensChildren){
@@ -93,12 +55,10 @@ submissionbtn.onclick = function() {
 //     }
 // }
                                                                          
-// artwork[1]
-
 // submissionbtn = document.getElementById("submission")
 
 // submissionbtn.onclick = function() {
-//     document.getElementById("txtOutput").innerHTML = getCount(document.getElementById('test'), false);
+    // document.getElementById("txtOutput").innerHTML = getCount(document.getElementById('test'), false);
     
 // }
 

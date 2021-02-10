@@ -3,7 +3,57 @@ h1 {
     font-size: 15vh;
     margin: 2.5vh;
 }
+
+#menu {
+    display: flex;
+    flex-flow: column;
+    position: absolute; 
+    left: -17.5vw; 
+    top: 6.5vh;
+    transition: 0.3s;
+    padding: 15px; 
+    width: 15vw;
+    font-size: 20px; 
+    color: black; 
+    background-color: #dee0e0;
+    border: double darkgrey ;
+}
+
+#submenu {
+    display: flex;
+    flex-flow: row nowrap;
+}
+#submenu img{
+    width: 5vw;
+    background-color: #dee0e0;
+    border-top: double darkgrey;
+    border-right: double darkgrey;
+    border-bottom: double darkgrey;
+    position: relative;
+    left: 6.5vw;
+    bottom: 2vh;
+}
+
+#menu:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+}
   
+#about {
+    top: 20px;
+    text-align: center;
+    margin-bottom: 1vh;
+    position: relative;
+    left: 2.5vw;
+    top: -1vh;
+    font-size: 3vw;
+}
+#aboutText {
+    text-align: center;
+    background-color: white;
+    border: inset .5vh;
+    padding: 1vh;
+}
+
 body {
     max-width: 85%;
     margin: auto;
@@ -107,7 +157,17 @@ img:hover {
     margin-top: 7.5vh;
     margin-bottom: 25vh;
 }
-  
+
+h2 {
+    text-align: center;
+    margin: auto;
+    font-size: 5vh;
+}
+
+#textOutput {
+    font-size: 5vh;
+}
+
 .box2 {
     display: flex;
     flex-flow: column;
@@ -115,7 +175,7 @@ img:hover {
     background-color: white;
     border: inset .5vh;
     margin: 1vh;
-    width: 20vw;
+    width: 50%;
 }
 
 .box2 div {
@@ -125,6 +185,6 @@ img:hover {
 .outputbox {
     background-color: white;
     border: inset .5vh;
-    width: 10vw;
+    width: 50%;
     margin: 1vh;
 }
